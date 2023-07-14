@@ -1,0 +1,65 @@
+button{
+
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid aqua;
+    box-shadow: 2px 2px 10px rgb(207, 41, 240);
+    color: rgb(107, 110, 252);
+    background-color: rgb(178, 220, 255);
+}
+
+button:hover{
+    background-color: rgb(225, 128, 255);
+    color: rgb(183, 0, 255);
+    border: 1px solid #e669ff;
+
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-text2{
+    color: aqua;
+    text-shadow: 2px 2px 2px #e669ff;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo { 
+    margin: 0;
+    padding: 25px 30px ;
+    font-weight: bold;
+    color: rgb(28, 80, 252);
+    font-size: 1.6em;
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin: 30%;
+}
+
+header a:hover{
+    color: aqua;
+}

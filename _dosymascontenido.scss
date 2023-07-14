@@ -1,0 +1,55 @@
+
+#dos .contenedor{
+    text-align: center;
+    padding: 200px 12px;
+
+ }
+
+ #mas-contenido {
+    background-color: rgb(53, 49, 49);
+    text-align: center;
+    color: aqua;
+ }
+
+ #mas-contenido .contenedor{
+    padding: 150px 12px;
+ }
+
+ #mas-contenido h2{
+    margin-top: 0;
+    font-size: 3.2em;
+ }
+
+ #mas-contenido p{
+    display: none;
+    color: aliceblue;
+ }
+
+ #mas-contenido .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px; 
+    margin: 20px;
+    border-radius: 20px;
+ }
+
+ .carta:nth-child(1) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("multimedia/masterizacion.jpg");
+}
+
+
+ .carta:nth-child(2){
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5))
+    ,url("multimedia/grabacion.jpg");
+
+ }
+
+ .carta:nth-child(3){
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5))
+    ,url("multimedia/videoclip.jpg");
+
+ }
