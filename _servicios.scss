@@ -1,7 +1,7 @@
 
 #servicios {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #1a1a1a;
   }
   
   .servicio {
@@ -9,17 +9,27 @@
   }
   
   .servicio h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #333333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00d9ff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 191, 255, 0.5), 0 0 20px rgba(148, 0, 211, 0.5);
   }
   
+
   .servicio-content {
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #1e90ff, #8a2be2);
+    border-image-slice: 1;
   }
-  
+
   .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -41,6 +51,16 @@
     color: #ff3366;
   }
   
+  .preciotex {
+    font-size: 24px;
+    color: #00ffff;
+    line-height: 1.6;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 0 0 4px rgba(0, 255, 255, 0.8);
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 4px;
+  }
+
   .servicio-carousel {
     margin-top: 30px;
   }
@@ -49,52 +69,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 50%;
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: transparent;
-    background-size: cover;
-    border: none;
-  }
-  
-  .carousel-control-prev-icon::before,
-  .carousel-control-next-icon::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .carousel-control-prev-icon::before {
-    width: 12px;
-    height: 20px;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-  }
-  
-  .carousel-control-next-icon::before {
-    width: 12px;
-    height: 20px;
-    border-top: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-  }
-  
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    opacity: 1;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5), 0 2px 5px rgba(0, 255, 255, 0.3);
   }
   
   .carousel-indicators {
@@ -110,7 +85,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #00ffff;
     border: 2px solid #333333;
     transition: background-color 0.3s ease-in-out;
   }
@@ -119,7 +94,8 @@
     background-color: #333333;
   }
   
-  #servicios h2 {
+#servicios h2 {
+    margin-top: 50px;
     margin-bottom: 40px;
     font-size: 50px;
     text-align: center;
@@ -130,4 +106,6 @@
     letter-spacing: 2px;
     font-weight: bold;
     text-transform: uppercase;
-  }
+    position: relative;
+}
+

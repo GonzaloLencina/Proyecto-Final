@@ -23,7 +23,10 @@
     #dos .contenedor {
         display: flex;
         justify-content: space-evenly;
+        background-color: #1a1a1a; 
+        color: #ffffff;
     }
+    
 
     #dos .texto {
         width: 50%;
@@ -35,10 +38,12 @@
     }
 
     #dos .texto p {
-        font-size: 1.2em;
-        color: #000000;
-        line-height: 1.5;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+        font-size: 24px;
+        color: #00ffff;
+        line-height: 1.6;
+        font-family: 'Roboto Mono', monospace;
+        text-shadow: 0 0 4px rgba(0, 255, 255, 0.8);
+        padding-bottom: 4px;
         transition: text-shadow 0.3s ease-in-out;
     }
 
@@ -115,7 +120,6 @@
     }
 }
 
-
 @media (max-width: #{$max-width-small}) {
     .gallery {
         display: block;
@@ -142,11 +146,11 @@
 
 @media (min-width: #{$min-width-large}) {
     #servicios {
-        padding: 50px 0;
+        padding-top: 100px;
     }
 
     #servicios h2 {
-        margin-top: 100px;
+        margin-top: 0px;
         font-size: 80px;
         text-align: center;
         background-image: linear-gradient(to right, #00d2ff, #7a00e8);
