@@ -1,59 +1,155 @@
+$light-count: 10;
+$light-size: 10px;
+$animation-duration: 2s;
+$light-directions: (
+  "right",
+  "bottom",
+  "top",
+  "left",
+  "bottom-right",
+  "top-right",
+  "bottom-left",
+  "top-left",
+  "alternate-x",
+  "alternate-y"
+);
+
+@keyframes color-change {
+  0% {
+    background-color: turquoise;
+  }
+  50% {
+    background-color: violet;
+  }
+  100% {
+    background-color: turquoise;
+  }
+}
+
+@keyframes light-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, 100vh);
+  }
+}
+
+.light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $light-size;
+  height: $light-size;
+  border-radius: $light-size;
+  animation: color-change $animation-duration infinite;
+
+  @for $i from 1 through $light-count {
+    &:nth-child(#{$i}) {
+      animation-delay: $animation-duration / $light-count * $i;
+      animation-name: color-change, light-move-#{$i};
+    }
+  }
+}
+
+@for $i from 1 through $light-count {
+  $direction: nth($light-directions, $i);
+
+  .light:nth-child(#{$i}) {
+    top: calc(random() * 100%);
+    left: calc(random() * 100%);
+    animation-duration: calc(random() * 3s + 2s);
+    width: calc(random() * 3px + 2px);
+    height: calc(random() * 3px + 2px);
+  }
+
+  @keyframes light-move-#{$i} {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      @if $direction == "right" {
+        transform: translate(100vw, 0);
+      } @else if $direction == "bottom" {
+        transform: translate(0, 100vh);
+      } @else if $direction == "top" {
+        transform: translate(0, -100vh);
+      } @else if $direction == "left" {
+        transform: translate(-100vw, 0);
+      } @else if $direction == "bottom-right" {
+        transform: translate(100vw, 100vh);
+      } @else if $direction == "top-right" {
+        transform: translate(100vw, -100vh);
+      } @else if $direction == "bottom-left" {
+        transform: translate(-100vw, 100vh);
+      } @else if $direction == "top-left" {
+        transform: translate(-100vw, -100vh);
+      } @else if $direction == "alternate-x" {
+        transform: translateX(100vw);
+      } @else if $direction == "alternate-y" {
+        transform: translateY(100vh);
+      }
+    }
+  }
+}
+
 
 #quienes-somos {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 100px 0;
-    text-align: center;
-  }
-  
-  #quienes-somos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #quienes-somos li {
-    margin: 16px 0;
-    font-weight: bold;
-    font-size: 2em;
-  }
-  
-  #quienes-somos li:before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  #quienes-somos p {
-    font-size: 1.2em;
-    margin-top: 30px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#quienes-somos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quienes-somos li {
+  margin: 16px 0;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#quienes-somos li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#quienes-somos p {
+  font-size: 1.2em;
+  margin-top: 30px;
 }
 
 #quienes-somos a {
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #ff1a1a;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-  }
-  
-  #quienes-somos a:hover {
-    background-color: #ff4d4d;
-  }
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff1a1a;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
 
-/* Estilos adicionales para quienes-somos.html */
+#quienes-somos a:hover {
+  background-color: #ff4d4d;
+}
+
 #quienes-somos h2 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -75,7 +171,6 @@
 #quienes-somos p:first-child {
   margin-top: 0;
 }
-
 
 #quienes-somos .quote {
   font-style: italic;

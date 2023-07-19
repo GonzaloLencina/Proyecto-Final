@@ -219,11 +219,242 @@ button:hover {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("multimedia/videoclip.jpg");
 }
 
+@keyframes color-change {
+  0% {
+    background-color: turquoise;
+  }
+  50% {
+    background-color: violet;
+  }
+  100% {
+    background-color: turquoise;
+  }
+}
+@keyframes light-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, 100vh);
+  }
+}
+.light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  animation: color-change 2s infinite;
+}
+.light:nth-child(1) {
+  animation-delay: 0.2s;
+  animation-name: color-change, light-move-1;
+}
+.light:nth-child(2) {
+  animation-delay: 0.4s;
+  animation-name: color-change, light-move-2;
+}
+.light:nth-child(3) {
+  animation-delay: 0.6s;
+  animation-name: color-change, light-move-3;
+}
+.light:nth-child(4) {
+  animation-delay: 0.8s;
+  animation-name: color-change, light-move-4;
+}
+.light:nth-child(5) {
+  animation-delay: 1s;
+  animation-name: color-change, light-move-5;
+}
+.light:nth-child(6) {
+  animation-delay: 1.2s;
+  animation-name: color-change, light-move-6;
+}
+.light:nth-child(7) {
+  animation-delay: 1.4s;
+  animation-name: color-change, light-move-7;
+}
+.light:nth-child(8) {
+  animation-delay: 1.6s;
+  animation-name: color-change, light-move-8;
+}
+.light:nth-child(9) {
+  animation-delay: 1.8s;
+  animation-name: color-change, light-move-9;
+}
+.light:nth-child(10) {
+  animation-delay: 2s;
+  animation-name: color-change, light-move-10;
+}
+
+.light:nth-child(1) {
+  top: 20.8024561805%;
+  left: 74.8352356243%;
+  animation-duration: 3.6763212763s;
+  width: 2.5420487358px;
+  height: 2.7073180486px;
+}
+
+@keyframes light-move-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, 0);
+  }
+}
+.light:nth-child(2) {
+  top: 9.3261694931%;
+  left: 3.4715599893%;
+  animation-duration: 4.6626485531s;
+  width: 4.3853325104px;
+  height: 4.3021210164px;
+}
+
+@keyframes light-move-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 100vh);
+  }
+}
+.light:nth-child(3) {
+  top: 9.0424855195%;
+  left: 69.8608752256%;
+  animation-duration: 4.6013445147s;
+  width: 4.9706325192px;
+  height: 2.1762719819px;
+}
+
+@keyframes light-move-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100vh);
+  }
+}
+.light:nth-child(4) {
+  top: 95.4231485352%;
+  left: 14.7515996372%;
+  animation-duration: 4.6389579262s;
+  width: 3.9469180295px;
+  height: 3.5495592698px;
+}
+
+@keyframes light-move-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100vw, 0);
+  }
+}
+.light:nth-child(5) {
+  top: 26.0021134621%;
+  left: 75.9059143229%;
+  animation-duration: 4.6160183102s;
+  width: 4.6501022568px;
+  height: 2.2565569258px;
+}
+
+@keyframes light-move-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, 100vh);
+  }
+}
+.light:nth-child(6) {
+  top: 70.3835770317%;
+  left: 30.8800342345%;
+  animation-duration: 3.9687844484s;
+  width: 3.678844836px;
+  height: 4.0879819097px;
+}
+
+@keyframes light-move-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100vw, -100vh);
+  }
+}
+.light:nth-child(7) {
+  top: 4.3634345244%;
+  left: 90.4630322549%;
+  animation-duration: 3.1359936767s;
+  width: 3.8890709221px;
+  height: 2.7068403925px;
+}
+
+@keyframes light-move-7 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100vw, 100vh);
+  }
+}
+.light:nth-child(8) {
+  top: 22.3677235049%;
+  left: 18.2817501325%;
+  animation-duration: 3.3682350115s;
+  width: 2.1767677065px;
+  height: 2.8358618867px;
+}
+
+@keyframes light-move-8 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100vw, -100vh);
+  }
+}
+.light:nth-child(9) {
+  top: 65.1751384286%;
+  left: 7.713878848%;
+  animation-duration: 4.9885899868s;
+  width: 3.1575193012px;
+  height: 3.2249473184px;
+}
+
+@keyframes light-move-9 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+.light:nth-child(10) {
+  top: 20.6686014018%;
+  left: 83.0638590581%;
+  animation-duration: 3.1964174001s;
+  width: 4.6909180904px;
+  height: 3.0959788089px;
+}
+
+@keyframes light-move-10 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
 #quienes-somos {
   background-color: #1a1a1a;
   color: #ffffff;
   padding: 100px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #quienes-somos ul {
@@ -273,7 +504,6 @@ button:hover {
   background-color: #ff4d4d;
 }
 
-/* Estilos adicionales para quienes-somos.html */
 #quienes-somos h2 {
   font-size: 3rem;
   margin-bottom: 20px;
