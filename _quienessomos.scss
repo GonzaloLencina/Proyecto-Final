@@ -181,3 +181,23 @@ $light-directions: (
   color: #00ffff;
   transition: color 0.3s ease;
 }
+
+@media (max-width:768px) {
+  #quienes-somos h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00ffff, #d53eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #quienes-somos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #00ffff;
+    margin-bottom: 10px;
+  }
+
+}
