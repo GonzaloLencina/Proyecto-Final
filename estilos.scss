@@ -1,8 +1,15 @@
+$min-width-medium: 720px;
+$max-width-small: 767px;
+$min-width-large: 768px;
+$max-width-medium: 1023px;
+$min-width-xlarge: 1024px;
+
 @import 'inicio.scss';
 @import 'header.scss';
 @import 'descubre.scss';
 @import 'dosymascontenido.scss';
 @import 'quienessomos.scss';
+@import 'galeria.scss';
 @import 'contactanos.scss';
 @import 'footer.scss';
 @import 'servicios.scss';
