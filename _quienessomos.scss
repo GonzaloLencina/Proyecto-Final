@@ -151,6 +151,7 @@ $light-directions: (
 }
 
 #quienes-somos h2 {
+  margin-top: 10px;
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: bold;
@@ -181,6 +182,18 @@ $light-directions: (
   color: #00ffff;
   transition: color 0.3s ease;
 }
+
+.pquienes {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cccccc; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5f8d99; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
 
 @media (max-width:768px) {
   #quienes-somos h2 {
